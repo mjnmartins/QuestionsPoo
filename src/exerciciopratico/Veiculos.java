@@ -5,12 +5,13 @@ public class Veiculos {
     private int peso;
     private int velocMax;
     private float preco;
-
+    private Motor motor;
+   
     public Veiculos() {
         this.peso = 0;
         this.velocMax = 0;
         this.preco = 0;
-
+        motor = new Motor();
     }
 
     public Veiculos(int peso, int velocMax, float preco) {
