@@ -14,10 +14,11 @@ public class Veiculos {
         motor = new Motor();
     }
 
-    public Veiculos(int peso, int velocMax, float preco) {
+    public Veiculos(int peso, int velocMax, float preco, Motor Motor) {
         this.peso = peso;
         this.velocMax = velocMax;
         this.preco = preco;
+        this.motor = motor;
     }
 
     public int getPeso() {
@@ -42,6 +43,14 @@ public class Veiculos {
 
     public void setPreco(float preco) {
         this.preco = preco;
+    }
+
+    public Motor getMotor() {
+        return motor;
+    }
+
+    public void setMotor(Motor motor) {
+        this.motor = motor;
     }
 
 }
