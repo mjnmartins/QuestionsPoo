@@ -6,7 +6,7 @@ public class Veiculos {
     private int velocMax;
     private float preco;
     private Motor motor;
-   
+
     public Veiculos() {
         this.peso = 0;
         this.velocMax = 0;
@@ -53,4 +53,10 @@ public class Veiculos {
         this.motor = motor;
     }
 
+    @Override
+    public String toString() {
+        return "peso: " + this.peso + ", velocMax: " + this.velocMax
+                + ", Preço: " + this.preco + ", motor: " + this.motor;
+
+    }
 }

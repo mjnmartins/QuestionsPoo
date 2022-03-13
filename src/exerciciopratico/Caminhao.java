@@ -9,8 +9,8 @@ public class Caminhao extends Veiculos {
     public Caminhao() {
     }
 
-    public Caminhao(float toneladas, int alturaMax, int comprimento, int peso, int velocMax, float preco) {
-        super(peso, velocMax, preco);
+    public Caminhao(float toneladas, int alturaMax, int comprimento, int peso, int velocMax, float preco, Motor Motor) {
+        super(peso, velocMax, preco, Motor);
         this.toneladas = toneladas;
         this.alturaMax = alturaMax;
         this.comprimento = comprimento;
@@ -39,5 +39,7 @@ public class Caminhao extends Veiculos {
     public void setComprimento(int comprimento) {
         this.comprimento = comprimento;
     }
+
+   
 
 }

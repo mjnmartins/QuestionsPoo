@@ -9,8 +9,8 @@ public class CarroPasseio extends Veiculos {
 
     }
 
-    public CarroPasseio(String cor, String modelo, int peso, int velocMax, float preco) {
-        super(peso, velocMax, preco);
+    public CarroPasseio(String cor, String modelo, int peso, int velocMax, float preco, Motor Motor) {
+        super(peso, velocMax, preco, Motor);
         this.cor = cor;
         this.modelo = modelo;
     }
