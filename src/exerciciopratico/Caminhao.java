@@ -9,7 +9,7 @@ public class Caminhao extends Veiculos {
     public Caminhao() {
     }
 
-    public Caminhao(float toneladas, int alturaMax, int comprimento, int peso, int velocMax, float preco, Motor Motor) {
+    public Caminhao(float toneladas, int alturaMax, int comprimento, int peso, int velocMax, float preco, int Motor) {
         super(peso, velocMax, preco, Motor);
         this.toneladas = toneladas;
         this.alturaMax = alturaMax;
@@ -40,6 +40,10 @@ public class Caminhao extends Veiculos {
         this.comprimento = comprimento;
     }
 
-   
+    @Override
+    public String toString() {
+        return "peso: " + this.toneladas + " toneladas" + ", AlturaMax: " + this.alturaMax
+                + ", comprimento: " + this.comprimento;
 
+    }
 }

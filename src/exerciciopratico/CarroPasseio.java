@@ -9,7 +9,7 @@ public class CarroPasseio extends Veiculos {
 
     }
 
-    public CarroPasseio(String cor, String modelo, int peso, int velocMax, float preco, Motor Motor) {
+    public CarroPasseio(String cor, String modelo, int peso, int velocMax, float preco, int Motor) {
         super(peso, velocMax, preco, Motor);
         this.cor = cor;
         this.modelo = modelo;
@@ -31,4 +31,8 @@ public class CarroPasseio extends Veiculos {
         this.modelo = modelo;
     }
 
+    @Override
+    public String toString() {
+        return "Cor " + this.cor + ", Modelo" + this.modelo;
+    }
 }

@@ -35,7 +35,7 @@ public class Motor {
     @Override
     public String toString() {
         return "Cilindro: " + this.numCilindro
-                + ", Potencia: " + this.potencia;
+                + ", Potencia: " + this.potencia + " CV";
 
     }
 }

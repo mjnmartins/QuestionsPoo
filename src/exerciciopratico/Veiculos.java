@@ -14,7 +14,7 @@ public class Veiculos {
         motor = new Motor();
     }
 
-    public Veiculos(int peso, int velocMax, float preco, Motor Motor) {
+    public Veiculos(int peso, int velocMax, float preco, int Motor) {
         this.peso = peso;
         this.velocMax = velocMax;
         this.preco = preco;
@@ -55,7 +55,7 @@ public class Veiculos {
 
     @Override
     public String toString() {
-        return "peso: " + this.peso + ", velocMax: " + this.velocMax
+        return "peso: " + this.peso + ", velocMax: " + this.velocMax + " KM/H "
                 + ", Preço: " + this.preco + ", motor: " + this.motor;
 
     }
